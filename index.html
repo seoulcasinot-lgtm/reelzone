@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="ko" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>릴게임사이트 완벽 가이드 | 무설치·안전·RNG 분석 릴존 (ReelZone)</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="국내 최고의 릴게임사이트 정보 플랫폼. 무설치 릴게임, 바다이야기, 야마토, 손오공의 작동 원리와 RNG 확률 구조를 객관적으로 분석합니다. 초보를 위한 5단계 가이드와 안전한 사이트 선택 기준을 확인하세요.">
+    <meta name="keywords" content="릴게임, 릴게임사이트, 무설치 릴게임, 바다이야기, 야마토, 손오공, 릴게임 확률, RNG, 릴게임 초보 가이드, 릴게임 용어">
+    <meta name="author" content="릴존 (ReelZone)">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://reelgamesite.clickn.co.kr/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://reelgamesite.clickn.co.kr/">
+    <meta property="og:title" content="릴게임사이트 완벽 가이드 | 무설치·안전·RNG 분석 릴존">
+    <meta property="og:description" content="광고 없는 객관적 정보, 6종 게임 완벽 분석, RNG 확률 구조 설명. 국내 최고의 릴게임 사이트 정보를 직접 분석해 사실만 전달합니다.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a', // Slate 900
+                        secondary: '#1e293b', // Slate 800
+                        accent: '#f59e0b', // Amber 500
+                        accentHover: '#d97706', // Amber 600
+                    },
+                    fontFamily: {
+                        sans: ['Pretendard', '-apple-system', 'BlinkMacSystemFont', 'system-ui', 'Roboto', 'Helvetica Neue', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts (Pretendard) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+
+    <!-- Custom CSS for Animations & Glassmorphism -->
+    <style>
+        body { font-family: 'Pretendard', sans-serif; }
+        .glass {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.4);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(245, 158, 11, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.2);
+        }
+        .text-gradient {
+            background: linear-gradient(to right, #f59e0b, #fbbf24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .hero-bg {
+            background-image: linear-gradient(to bottom, rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 1)), url('https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .faq-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        .faq-content.active {
+            max-height: 500px;
+        }
+        /* 눈에 띄는 바로가기 버튼 애니메이션 */
+        .btn-glow {
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-glow::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0) 100%);
+            transform: rotate(30deg);
+            transition: all 0.6s;
+            opacity: 0;
+        }
+        .btn-glow:hover::after {
+            opacity: 1;
+            left: 100%;
+        }
+    </style>
+
+    <!-- Schema.org JSON-LD for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Organization",
+          "name": "릴존 (ReelZone)",
+          "url": "https://reelgamesite.clickn.co.kr/",
+          "logo": "https://reelgamesite.clickn.co.kr/logo.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "0000-0000",
+            "contactType": "customer service"
+          }
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "무설치 릴게임이 안전한가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "무설치 릴게임은 브라우저 내에서 실행되기 때문에 별도 프로그램을 설치하지 않아도 됩니다. 이 자체로 악성코드 감염 위험을 크게 줄여줍니다. 브라우저 보안 업데이트를 최신 상태로 유지하고 HTTPS 사이트를 이용하면 더욱 안전합니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "모바일 릴게임과 PC 릴게임의 확률이 다른가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "정상적인 릴게임사이트라면 같은 버전의 게임은 모바일과 PC의 RNG 확률 구조가 동일합니다. 단, 일부 사이트에서 모바일과 PC 버전이 서로 다른 버전의 게임으로 제공되는 경우가 있으므로, 이용 전 버전을 확인하는 것이 좋습니다."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "릴게임 입문자에게 가장 추천하는 게임은 무엇인가요?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "바다이야기를 가장 먼저 추천합니다. 심볼 구성이 단순하고 게임 속도가 느려서 각 판의 결과를 차분히 분석할 수 있습니다. 심볼 조합과 배당 구조에 익숙해진 후 야마토나 다른 게임으로 넘어가는 것이 좋습니다."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-primary text-gray-200 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex items-center">
+                    <a href="#" class="text-2xl font-bold text-white tracking-tighter">
+                        REEL<span class="text-accent">ZONE</span>
+                    </a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#guide" class="hover:text-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">초보 가이드</a>
+                        <a href="#games" class="hover:text-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">게임 분석</a>
+                        <a href="#faq" class="hover:text-accent transition-colors px-3 py-2 rounded-md text-sm font-medium">FAQ</a>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <a href="https://xoreel.net" target="_blank" rel="noopener noreferrer" class="bg-accent hover:bg-accentHover text-white px-6 py-2.5 rounded-full font-bold transition-all shadow-lg shadow-amber-500/20 flex items-center gap-2">
+                        파트너 사이트 바로가기
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                    </a>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden glass border-t border-gray-800" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#guide" class="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">초보 가이드</a>
+                <a href="#games" class="text-gray-300 hover:text-accent block px-3 py-2 rounded-md text-base font-medium">게임 분석</a>
+                <a href="https://xoreel.net" target="_blank" rel="noopener noreferrer" class="text-accent font-bold block px-3 py-2 rounded-md text-base">바로가기</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="inline-block py-1 px-3 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-sm font-semibold mb-6">
+                🛡️ 국내 최고의 릴게임 정보 분석 플랫폼
+            </span>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+                잘못 고르면 손해입니다.<br>
+                <span class="text-gradient">사실만 전달하는</span> 릴게임 사이트 정보
+            </h1>
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-gray-400 mb-10">
+                어떤 릴게임사이트를 선택하느냐에 따라 경험이 완전히 달라집니다.<br class="hidden md:block">
+                릴존은 직접 분석한 객관적 데이터와 RNG 확률 구조를 투명하게 공개합니다.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://xoreel.net" target="_blank" rel="noopener noreferrer" class="btn-glow bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-white px-10 py-4 rounded-xl font-extrabold text-xl transition-all shadow-xl shadow-amber-500/30 flex items-center justify-center gap-3 transform hover:scale-[1.02] active:scale-[0.98]">
+                    신뢰할 수 있는 사이트 바로가기
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                </a>
+                <a href="#guide" class="glass hover:bg-white/10 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all border border-gray-700 flex items-center justify-center gap-2">
+                    초보 5단계 가이드
+                </a>
+            </div>
+            
+            <!-- Trust Badges -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+                <div class="glass-card p-4 rounded-xl text-center">
+                    <div class="text-3xl mb-2">🔍</div>
+                    <div class="font-bold text-white">직접 분석</div>
+                    <div class="text-sm text-gray-400">광고 없는 객관적 정보</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl text-center">
+                    <div class="text-3xl mb-2">🎮</div>
+                    <div class="font-bold text-white">6종 게임</div>
+                    <div class="text-sm text-gray-400">릴게임 종류별 완벽 분석</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl text-center">
+                    <div class="text-3xl mb-2">🎲</div>
+                    <div class="font-bold text-white">RNG 해설</div>
+                    <div class="text-sm text-gray-400">확률 구조 완벽 설명</div>
+                </div>
+                <div class="glass-card p-4 rounded-xl text-center">
+                    <div class="text-3xl mb-2">📖</div>
+                    <div class="font-bold text-white">용어 사전</div>
+                    <div class="text-sm text-gray-400">초보도 이해 가능한 가이드</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Analysis Section -->
+    <section id="games" class="py-24 bg-primary relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">릴게임 심층 분석</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">단순히 "오래된 게임"이라서 인기 있는 것이 아닙니다. 각 게임의 핵심 특성과 버전에 따른 차이를 정확히 알아야 합니다.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <article class="glass-card rounded-2xl overflow-hidden group flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?auto=format&fit=crop&w=800&q=80" alt="바다이야기 릴게임 분석" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-white">바다이야기</h3>
+                            <span class="bg-blue-500/20 text-blue-400 text-xs px-2 py-1 rounded font-semibold">입문자 추천</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 flex-grow">짙은 파란색 배경과 느긋한 애니메이션이 주는 심리적 안정감. 바다이야기2의 클래식 구성부터 바다이야기5의 멀티 페이라인까지 버전별 차이를 정리했습니다.</p>
+                        
+                        <!-- 수정된 큰 바로가기 버튼 -->
+                        <a href="https://xoreel.net" target="_blank" rel="noopener noreferrer" class="btn-glow mt-auto block w-full text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-white font-extrabold text-lg py-4 rounded-xl transition-all shadow-lg shadow-amber-500/30 flex items-center justify-center gap-2 group transform hover:scale-[1.02] active:scale-[0.98]">
+                            바로가기
+                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 2 -->
+                <article class="glass-card rounded-2xl overflow-hidden group flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1528360983277-13d9b152c6d1?auto=format&fit=crop&w=800&q=80" alt="야마토 릴게임 분석" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-white">야마토 시리즈</h3>
+                            <span class="bg-red-500/20 text-red-400 text-xs px-2 py-1 rounded font-semibold">스피드형</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 flex-grow">회차당 소요 시간이 짧아 빠른 진행을 원하는 이용자에게 최적화되었습니다. 야마토2, 3, 5 버전별 페이라인과 심볼 구성의 복잡도를 비교 분석합니다.</p>
+                        
+                        <!-- 수정된 큰 바로가기 버튼 -->
+                        <a href="https://xoreel.net" target="_blank" rel="noopener noreferrer" class="btn-glow mt-auto block w-full text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-white font-extrabold text-lg py-4 rounded-xl transition-all shadow-lg shadow-amber-500/30 flex items-center justify-center gap-2 group transform hover:scale-[1.02] active:scale-[0.98]">
+                            바로가기
+                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                        </a>
+                    </div>
+                </article>
+
+                <!-- Card 3 -->
+                <article class="glass-card rounded-2xl overflow-hidden group flex flex-col">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="손오공 릴게임 분석" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" loading="lazy">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <div class="flex items-center justify-between mb-3">
+                            <h3 class="text-xl font-bold text-white">손오공 / 알라딘</h3>
+                            <span class="bg-purple-500/20 text-purple-400 text-xs px-2 py-1 rounded font-semibold">스토리형</span>
+                        </div>
+                        <p class="text-gray-400 text-sm mb-6 flex-grow">서유기 캐릭터나 아라비안나이트 배경의 독창적인 테마와 연출. 캐릭터 조합에 따라 스토리 연출이 달라지는 엔터테인먼트적 요소를 분석합니다.</p>
+                        
+                        <!-- 수정된 큰 바로가기 버튼 -->
+                        <a href="https://xoreel.net" target="_blank" rel="noopener noreferrer" class="btn-glow mt-auto block w-full text-center bg-gradient-to-r from-amber-500 to-orange-500 hover:from-amber-400 hover:to-orange-400 text-white font-extrabold text-lg py-4 rounded-xl transition-all shadow-lg shadow-amber-500/30 flex items-center justify-center gap-2 group transform hover:scale-[1.02] active:scale-[0.98]">
+                            바로가기
+                            <svg class="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6"></path></svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Beginner's Guide Section -->
+    <section id="guide" class="py-24 bg-secondary/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-6">릴게임, 처음이라면<br><span class="text-accent">이 5단계만</span> 알고 시작하세요.</h2>
+                    <p class="text-gray-400 mb-8">릴게임사이트를 처음 접하는 사람들이 가장 많이 하는 실수는 게임의 구조를 모른 채 바로 시작하는 것입니다. 시행착오를 크게 줄여드립니다.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold">1</div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">릴(Reel)의 작동 원리 이해</h4>
+                                <p class="text-gray-400 text-sm mt-1">화면 속 3~5개의 릴이 독립적으로 회전하다 멈추고, 심볼 조합으로 결과가 결정됩니다.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold">2</div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">RNG(난수 발생기) 인지</h4>
+                                <p class="text-gray-400 text-sm mt-1">"패턴이 있다"는 말은 거짓입니다. 이전 판 결과나 투입 금액은 다음 판에 전혀 영향을 주지 않습니다.</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="flex-shrink-0 w-10 h-10 rounded-full bg-accent/20 text-accent flex items-center justify-center font-bold">3</div>
+                            <div>
+                                <h4 class="text-white font-bold text-lg">무설치 방식 선택</h4>
+                                <p class="text-gray-400 text-sm mt-1">2026년 기준, 무설치가 압도적으로 유리합니다. 브라우저에서 바로 실행되어 보안 위험이 없습니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative">
+                    <div class="absolute -inset-4 bg-accent/20 rounded-2xl blur-xl"></div>
+                    <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" alt="릴게임 초보 가이드" class="relative rounded-2xl shadow-2xl border border-gray-700 w-full" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mistakes to Avoid -->
+    <section class="py-24 bg-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">이용자가 가장 많이 하는 <span class="text-red-400">실수 TOP 3</span></h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-red-500/5 border border-red-500/20 p-6 rounded-xl">
+                    <h3 class="text-red-400 font-bold text-lg mb-2">01. 버전 확인 없이 시작</h3>
+                    <p class="text-gray-400 text-sm">같은 바다이야기라도 버전에 따라 심볼 구성과 보너스 구조가 완전히 다릅니다. 사이트 접속 전 반드시 버전 명칭을 확인하세요.</p>
+                </div>
+                <div class="bg-red-500/5 border border-red-500/20 p-6 rounded-xl">
+                    <h3 class="text-red-400 font-bold text-lg mb-2">02. 도박사의 오류</h3>
+                    <p class="text-gray-400 text-sm">"많이 잃었으니 곧 당첨될 것"이라는 생각은 수학적으로 틀렸습니다. RNG는 이전 결과를 전혀 기억하지 않습니다.</p>
+                </div>
+                <div class="bg-red-500/5 border border-red-500/20 p-6 rounded-xl">
+                    <h3 class="text-red-400 font-bold text-lg mb-2">03. 출처 불명 설치파일</h3>
+                    <p class="text-gray-400 text-sm">카카오톡·문자로 전송된 설치 링크는 악성코드의 주요 통로입니다. 반드시 무설치(브라우저 접속) 방식을 선택하세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section with Schema -->
+    <section id="faq" class="py-24 bg-secondary/30">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-bold text-white text-center mb-12">자주 묻는 질문 (FAQ)</h2>
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="glass rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-white">무설치 릴게임이 안전한가요?</span>
+                        <svg class="w-5 h-5 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-400 pb-4 text-sm leading-relaxed">무설치 릴게임은 브라우저 내에서 실행되기 때문에 별도 프로그램을 설치하지 않아도 됩니다. 이 자체로 악성코드 감염 위험을 크게 줄여줍니다. 브라우저 보안 업데이트를 최신 상태로 유지하고 HTTPS 사이트를 이용하면 더욱 안전합니다.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 2 -->
+                <div class="glass rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-white">모바일 릴게임과 PC 릴게임의 확률이 다른가요?</span>
+                        <svg class="w-5 h-5 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-400 pb-4 text-sm leading-relaxed">정상적인 릴게임사이트라면 같은 버전의 게임은 모바일과 PC의 RNG 확률 구조가 동일합니다. 단, 일부 사이트에서 모바일과 PC 버전이 서로 다른 버전의 게임으로 제공되는 경우가 있으므로, 이용 전 버전을 확인하는 것이 좋습니다.</p>
+                    </div>
+                </div>
+                <!-- FAQ Item 3 -->
+                <div class="glass rounded-xl overflow-hidden">
+                    <button class="w-full px-6 py-4 text-left flex justify-between items-center focus:outline-none" onclick="toggleFaq(this)">
+                        <span class="font-semibold text-white">릴게임 입문자에게 가장 추천하는 게임은 무엇인가요?</span>
+                        <svg class="w-5 h-5 text-accent transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                    </button>
+                    <div class="faq-content px-6">
+                        <p class="text-gray-400 pb-4 text-sm leading-relaxed">바다이야기를 가장 먼저 추천합니다. 심볼 구성이 단순하고 게임 속도가 느려서 각 판의 결과를 차분히 분석할 수 있습니다. 심볼 조합과 배당 구조에 익숙해진 후 야마토나 다른 게임으로 넘어가는 것이 좋습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary border-t border-gray-800 pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="#" class="text-2xl font-bold text-white tracking-tighter mb-4 block">
+                        REEL<span class="text-accent">ZONE</span>
+                    </a>
+                    <p class="text-gray-500 text-sm leading-relaxed max-w-sm">
+                        릴존은 국내 릴게임 정보를 직접 분석해 사실만 전달하는 정보 제공 플랫폼입니다. 우리는 어떤 릴게임사이트의 가입도 강요하지 않으며, 순수하게 게임의 구조와 안전한 이용 환경에 대한 정보만을 제공합니다.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">바로가기</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="https://xoreel.net" target="_blank" rel="noopener noreferrer" class="hover:text-accent transition-colors">파트너 사이트</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">이용약관</a></li>
+                        <li><a href="#" class="hover:text-accent transition-colors">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-4">연락처</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li>주소: 서울특별시</li>
+                        <li>전화: 0000-0000</li>
+                        <li>사업자등록번호: 000-00-00000</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-600 text-sm">
+                    COPYRIGHT (c) (주)릴존 ALL RIGHTS RESERVED. <br class="md:hidden">
+                    본 사이트의 콘텐츠는 저작권법의 보호를 받습니다.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+        // FAQ Accordion Logic
+        function toggleFaq(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('svg');
+            
+            // Close all others
+            document.querySelectorAll('.faq-content').forEach(el => {
+                if (el !== content) {
+                    el.classList.remove('active');
+                    el.previousElementSibling.querySelector('svg').classList.remove('rotate-180');
+                }
+            });
+
+            // Toggle current
+            content.classList.toggle('active');
+            icon.classList.toggle('rotate-180');
+        }
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                    // Close mobile menu if open
+                    document.getElementById('mobile-menu').classList.add('hidden');
+                }
+            });
+        });
+
+        // Add scroll effect to navbar
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 50) {
+                nav.classList.add('shadow-lg');
+                nav.style.background = 'rgba(15, 23, 42, 0.95)';
+            } else {
+                nav.classList.remove('shadow-lg');
+                nav.style.background = 'rgba(30, 41, 59, 0.7)';
+            }
+        });
+    </script>
+</body>
+</html>
